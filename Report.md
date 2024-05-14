@@ -12,6 +12,12 @@ The dataset comprises over 34,000 organizations that have received funding from 
 
 ###### Model 1 from starCode_deepLearning.ipynb
 
+- During preprocessing, two columns (EIN and NAME) that were neither targets nor features were dropped.
+  ![EIN and NAME columns dropped](model1_EIN&NAME_dropped.png)
+- Binning, a technique commonly used for categorical features, was used to reduce the number of unique values in two features (APPLICATION_TYPE & CLASSIFICATION) in the data, helping to prevent overfitting.
+  ![Binning of APPLICATION_TYPE](binning_APPTYPE.png)
+  ![Binning of CLASSIFICATION](binning_CLS.png)
+
 - screenshots of 2 cols dropped, model, acc
   Data Preprocessing
 
@@ -27,9 +33,25 @@ What steps did you take in your attempts to increase model performance?
 ###### Model 2 from AlphabetSoupCharity_accBelow75.ipynb
 
 - screenshots of 2 cols dropped, model with more neural networks, acc
+  What variable(s) are the target(s) for your model?
+  What variable(s) are the features for your model?
+  What variable(s) should be removed from the input data because they are neither targets nor features?
+  Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take in your attempts to increase model performance?
 
 ###### Model 3 from AlphabetSoupCharity_Optimization.ipynb
 
 - screenshots of 1 col dropped, model with neural networks, acc
+  What variable(s) are the target(s) for your model?
+  What variable(s) are the features for your model?
+  What variable(s) should be removed from the input data because they are neither targets nor features?
+  Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take in your attempts to increase model performance?
 
 #### Conclusion
