@@ -17,18 +17,11 @@ The dataset comprises over 34,000 organizations that have received funding from 
 - Binning, a technique commonly used for categorical features, was used to reduce the number of unique values in two features (APPLICATION_TYPE & CLASSIFICATION) in the data, helping to prevent overfitting.
   ![Binning of APPLICATION_TYPE](binning_APPTYPE.png)
   ![Binning of CLASSIFICATION](binning_CLS.png)
-
-- screenshots of 2 cols dropped, model, acc
-  Data Preprocessing
-
-What variable(s) are the target(s) for your model?
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
-Compiling, Training, and Evaluating the Model
-
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
+- The target was 'IS_SUCCESSFUL', and the features were the remaining variables in the dataset, except 'APPLICATION_TYPE' and 'CLASSIFICATION'.
+  ![Split the data into target adn feature arrays](split_to_targetANDfeatures.png)
+- How many neurons, layers, and activation functions did you select for your neural network model, and why?
+  Were you able to achieve the target model performance?
+  What steps did you take in your attempts to increase model performance?
 
 ##### Model 2 from AlphabetSoupCharity_accBelow75.ipynb
 
