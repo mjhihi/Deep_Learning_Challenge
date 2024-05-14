@@ -10,7 +10,7 @@ The dataset comprises over 34,000 organizations that have received funding from 
 
 ### Model selection process
 
-###### Model 1 from starCode_deepLearning.ipynb
+##### Model 1 from starCode_deepLearning.ipynb
 
 - During preprocessing, two columns (EIN and NAME) that were neither targets nor features were dropped.
   ![EIN and NAME columns dropped](model1_EIN&NAME_dropped.png)
@@ -30,7 +30,7 @@ How many neurons, layers, and activation functions did you select for your neura
 Were you able to achieve the target model performance?
 What steps did you take in your attempts to increase model performance?
 
-###### Model 2 from AlphabetSoupCharity_accBelow75.ipynb
+##### Model 2 from AlphabetSoupCharity_accBelow75.ipynb
 
 - screenshots of 2 cols dropped, model with more neural networks, acc
   What variable(s) are the target(s) for your model?
@@ -42,7 +42,7 @@ How many neurons, layers, and activation functions did you select for your neura
 Were you able to achieve the target model performance?
 What steps did you take in your attempts to increase model performance?
 
-###### Model 3 from AlphabetSoupCharity_Optimization.ipynb
+##### Model 3 from AlphabetSoupCharity_Optimization.ipynb
 
 - screenshots of 1 col dropped, model with neural networks, acc
   What variable(s) are the target(s) for your model?
