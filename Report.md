@@ -1,16 +1,16 @@
-## Deep learning model for Alphabet Soup
+# Deep learning model for Alphabet Soup
 
-### Purpose of the analysis
+## Purpose of the analysis
 
 The analysis aims to develop a binary classifier using machine learning techniques and neural networks to predict the success of applicants funded by Alphabet Soup, a nonprofit foundation. By leveraging features from the provided dataset, the goal is to identify applicants with the highest likelihood of success in their ventures, aiding Alphabet Soup in making informed decisions about funding allocation.
 
-### Description of the dataset
+## Description of the dataset
 
 The dataset comprises over 34,000 organizations that have received funding from Alphabet Soup. It includes various metadata such as identification details, application type, sector affiliation, government classification, use case for funding, organization type, active status, income classification, special considerations, requested funding amount, and a binary indicator of whether the funding was effectively utilized.
 
-### Model selection process
+## Model selection process
 
-##### Model 1 from starCode_deepLearning.ipynb
+#### Model 1 from starCode_deepLearning.ipynb
 
 - During preprocessing, two columns (EIN and NAME) that were neither targets nor features were dropped.
   ![EIN and NAME columns dropped](model1_EIN&NAME_dropped.png)
@@ -25,7 +25,7 @@ The dataset comprises over 34,000 organizations that have received funding from 
 - Based on the evaluation results, Loss was 0.5552, and accuracy was 0.7269, approximately 73%, which is below the target of 75% predictive accuracy. Therefore, the model did not achieve the desired performance level, and to improve the model's performance, the second model experiments with different architectures, especially changed the number of neurons for the second hidden layer (see below for Hyperparameter tuning in Model 2).
   ![Model1Acc](model1Acc.png)
 
-##### Model 2 from AlphabetSoupCharity_accBelow75.ipynb
+#### Model 2 from AlphabetSoupCharity_accBelow75.ipynb
 
 - In preprocessing, two columns (EIN and NAME) that were neither targets nor features were dropped.
   ![EIN and NAME columns dropped](model1_EIN&NAME_dropped.png)
@@ -40,7 +40,7 @@ The dataset comprises over 34,000 organizations that have received funding from 
 - Based on the results, Loss was 0.5515, and accuracy was 0.7299, approximately 73%, which is below the target of 75% predictive accuracy. Therefore, the model did not achieve the desired performance level, and to improve the model's performance, the last model adds another feature, NAME, that could be useful for prediction (see below for Feature engineering in the last model).
   ![Model 2 Accuracy, below 75%](model2Acc.png)
 
-##### Model 3 from AlphabetSoupCharity_Optimization.ipynb
+#### Model 3 from AlphabetSoupCharity_Optimization.ipynb
 
 - Different from the models above, in this model, just one feature variable, EIN, was dropped (Feature engineering) to increase model performance.
   ![EIN variable dropped](model3_EIN_dropped.png)
@@ -57,7 +57,7 @@ The dataset comprises over 34,000 organizations that have received funding from 
 - Based on the evaluation results, Loss was 0.4727, and accuracy was 0.7862, approximately 79%, which is above the target of 75% predictive accuracy. Therefore, the model did achieve the desired performance level.
   ![Model3, Optimization Accuracy](model3Acc.png)
 
-### Conclusion
+## Conclusion
 
 The goal of the analysis is to develop a binary classifier using machine learning techniques and neural networks to predict the success of applicants funded by Alphabet Soup, a nonprofit foundation.
 
